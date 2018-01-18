@@ -1,0 +1,39 @@
+Python notes:
+
+# it is a single line comment in python
+
+str = "# this is not a comment in python"
+
+>>>7/-3
+-3
+***********************************************************************************************************
+
+Study of complex numbers:
+
+Let a = 2 + 1j
+
+>>>a = 2 + 1j
+>>>a.real
+2.0   
+>>>a.imag
+1.0
+
+This is the way to access the real and imaginary part of a complex number separately
+
+Note: the imaginary part of a complex number has a suffix j or J
+b = 2 + j  # error: reason j must be the suffix of a number. j alone will be treated as an undefined variable
+
+>>>b = complex(3,4)  # b = 3 + 4j
+>>>abs(b)  # sqrt(3**2 + 4**2) i.e. the magnitude of b
+5.0
+
+**************************************************************************************************************
+
+>>>round(a,2)  #used to round off a floating point number to a given precision mentioned in 2nd argument
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+Python notes:
+
+***************Topic: How to get information about any module in python?***********************
+
+1. To know about what are different built-in modules, keywords and topics in python, type:
+   >>help()        # this will open an interactive help session where you can type "modules" or "keywords" or "topics"
+                   # to know more about them
+   help>modules    # gives the list of all the modules
+
+2. To know about say, math module, type:
+   >>import math   # first you have to import that module
+   >>dir(math)     # it only gives a list of functions and variables in the module
+   or
+   >>help(math)    # it gives a detailed list of functions and variables in the module
+
+3. math module:
+   >>import math
+   >>math.__doc__  # gives a quick documentation, a concise description about math module
+   >>math.sqrt(81) # returns the square root of the number passed as parameter
+   9.0
+
+   

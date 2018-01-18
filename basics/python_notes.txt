@@ -1,0 +1,149 @@
+ mylist = [28,38,29,67,12,109,47]
+>>> mylist
+[28, 38, 29, 67, 12, 109, 47]
+>>> mylist.sort()
+>>> mylist
+[12, 28, 29, 38, 47, 67, 109]
+>>> sorted('apsingh')
+['a', 'g', 'h', 'i', 'n', 'p', 's']
+>>> s=sorted('apsingh')
+>>> s
+['a', 'g', 'h', 'i', 'n', 'p', 's']
+>>> s = 'anirudha'
+>>> s
+'anirudha'
+>>> s.sort()
+
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    s.sort()
+AttributeError: 'str' object has no attribute 'sort'
+>>> l = list(s)
+>>> l
+['a', 'n', 'i', 'r', 'u', 'd', 'h', 'a']
+>>> l.sort()
+>>> l
+['a', 'a', 'd', 'h', 'i', 'n', 'r', 'u']
+>>> tu = (12,14,67,24)
+>>> tu
+(12, 14, 67, 24)
+>>> tu[0]
+12
+>>> tu[1]
+14
+>>> tu[2]
+67
+>>> tu[3]
+24
+
+mystr = 'Hi, this is a python course and I\'m enjoying it'
+>>> mystr
+"Hi, this is a python course and I'm enjoying it"
+>>> mystr.find('python')
+14
+>>> list(mystr)
+['H', 'i', ',', ' ', 't', 'h', 'i', 's', ' ', 'i', 's', ' ', 'a', ' ', 'p', 'y', 't', 'h', 'o', 'n', ' ', 'c', 'o', 'u', 'r', 's', 'e', ' ', 'a', 'n', 'd', ' ', 'I', "'", 'm', ' ', 'e', 'n', 'j', 'o', 'y', 'i', 'n', 'g', ' ', 'i', 't']
+>>> mystr
+"Hi, this is a python course and I'm enjoying it"
+>>> mystr.find('it')
+45
+>>> mystr.find('is')
+6
+>>> mystr.find('java')
+-1
+>>> msg = "%s is an even number whereas %s is an odd number"
+>>> msg
+'%s is an even number whereas %s is an odd number'
+>>> nums=(12,21)
+>>> nums
+(12, 21)
+>>> print msg % nums
+12 is an even number whereas 21 is an odd number
+>>> nums=[12.21]
+>>> nums
+[12.21]
+>>> nums=[12,21]
+>>> nums
+[12, 21]
+>>> print msg % nums
+
+Traceback (most recent call last):
+  File "<pyshell#37>", line 1, in <module>
+    print msg % nums
+TypeError: not enough arguments for format string
+>>> nums=(13,32)
+>>> print msg % nums
+13 is an even number whereas 32 is an odd number
+>>>
+
+
+
+name = "Hi, my name is ANIRUDHA PRATAP SINGH"
+>>> name
+'Hi, my name is ANIRUDHA PRATAP SINGH'
+>>> name.lower()
+'hi, my name is anirudha pratap singh'
+>>> name
+'Hi, my name is ANIRUDHA PRATAP SINGH'
+>>> name = name.lower()
+>>> name
+'hi, my name is anirudha pratap singh'
+>>> name.replace('anirudha','rajendra')
+'hi, my name is rajendra pratap singh'
+>>> name
+'hi, my name is anirudha pratap singh'
+>>> name = name.replace('anirudha','rajendra')
+>>> name
+'hi, my name is rajendra pratap singh'
+>>> seq = ['I','stay','in','UOH']
+>>> between = 'hello'
+>>> seq
+['I', 'stay', 'in', 'UOH']
+>>> between
+'hello'
+>>> between.join(seq)
+'IhellostayhelloinhelloUOH'
+>>> seq
+['I', 'stay', 'in', 'UOH']
+>>> between
+'hello'
+>>> v = between.join(seq)
+>>> v
+'IhellostayhelloinhelloUOH'
+>>>
+
+
+
+students = {'Anirudha':'Mtech','Zakir':'IMA','Shiva':'Msc'}
+>>> students
+{'Anirudha': 'Mtech', 'Shiva': 'Msc', 'Zakir': 'IMA'}
+>>> students['Anirudha']
+'Mtech'
+>>> students
+{'Anirudha': 'Mtech', 'Shiva': 'Msc', 'Zakir': 'IMA'}
+>>> students['Shiva']
+'Msc'
+>>> students['Zakir']
+'IMA'
+>>> ages = {'apsingh':23,'amit':'21'}
+>>> ages
+{'amit': '21', 'apsingh': 23}
+>>> ages['amit']
+'21'
+>>> ages['apsingh']
+23
+>>> ages.has_key('manish')
+False
+>>> ages.has_key('apsingh')
+True
+>>> newage = ages.copy()
+>>> newage
+{'amit': '21', 'apsingh': 23}
+>>> newage.clear()
+>>> newage
+{}
+>>> newage = ages
+>>> newage
+{'amit': '21', 'apsingh': 23}
+>>> newage['amit']
+'21'  

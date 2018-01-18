@@ -1,0 +1,19 @@
+Python 2.7.9 (default, Dec 10 2014, 12:24:55) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> type(10)
+<type 'int'>
+>>> type('hello')
+<type 'str'>
+>>> type(2.5)
+<type 'float'>
+>>> k = type(2.5)
+>>> k
+<type 'float'>
+>>> print k
+<type 'float'>
+>>> 5
+5
+>>> x=5
+>>> x+1
+6
+

@@ -1,0 +1,5 @@
+How to download youtube videos using python:
+
+    1. Install pip (if you don't have) 
+    2. (on command line, write) sudo pip install youtube-dl (install youtube-dl python package)
+    3. (on command line) $ youtube-dl "<video_url>"

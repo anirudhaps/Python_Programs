@@ -1,0 +1,51 @@
+Python notes:
+
+*********************************Topic: modules*************************************
+
+1. A module can be created by writing/defining one or more functions in a separate file. Save this file with extension .py in 
+"C:/python27/" directory.
+For eg.:
+
+**********calculator.py************
+def mul(a,b):
+    c = a * b
+    print c
+
+def div(a,b):
+    c = a / b
+    print c
+
+def power(a,b):
+    c = a**b
+    print c
+
+*************************************
+Save this file in "C:/python27/"
+
+2. How to access that module in your program or from the python shell?
+
+**First, we have to import that module using statement: import calculator
+**Then, start using the functions defined in the module calculator in the following manner:
+  >>calculator.mul(3,5)
+  Output: 15
+**If you do some modification in calculator.py file, then you have to reload the module by using 
+  reload(calculator) statement in the following manner:
+  >>reload(calculator)
+  Otherwise, everytime the previous copy of the module will be accessed.
+  Reimporting a module after modification won't work.
+  Eg. suppose you have modified the mul function of calculator.py to :
+  
+  def mul(a,b):
+    c = a * b
+    print "product = " + `c`
+	
+  then reload the module:
+  >>reload(calculator)
+  >>calculator.mul(3,4)
+  Output: product = 12
+
+**We can also give a new name to a function of a module and use it in our program:
+  >>multiply = calculator.mul
+  >>multiply(3,5)
+  15
+  
