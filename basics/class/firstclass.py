@@ -1,4 +1,4 @@
-#creating a class and an object
+# creating a class and an object
 
 class firstClass:
     name = "Anirudha Pratap Singh"
@@ -12,7 +12,7 @@ class firstClass:
 
 
 obj = firstClass()
-print obj.age
-print obj.name
-print obj.getname()
-print obj.getAge()
+print(obj.age)
+print(obj.name)
+print(obj.getname())
+print(obj.getAge())

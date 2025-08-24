@@ -1,0 +1,157 @@
+Python 3.12.4 (main, Jun 15 2024, 12:30:05) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>> 7/3
+2.3333333333333335
+>>> ^[[A^[[D
+  File "<stdin>", line 1
+    ^
+SyntaxError: invalid non-printable character U+001B
+>>> 7//3
+2
+>>> 7/-3
+-2.3333333333333335
+>>> a = 2 + 1j
+>>> a
+(2+1j)
+>>> a.real
+2.0
+>>> a.imag
+1.0
+>>> b = 2 + j
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'j' is not defined
+>>> b = complex(2, 1)
+>>> b
+(2+1j)
+>>> a + b
+(4+2j)
+>>> b = a + b
+>>> b
+(4+2j)
+>>> a + b
+(6+3j)
+>>> b = complex(4, 3)
+>>> b
+(4+3j)
+>>> a + b
+(6+4j)
+>>> a
+(2+1j)
+>>> b
+(4+3j)
+>>> a * b
+(5+10j)
+>>> a / b
+(0.44-0.08j)
+>>> abs(a)
+2.23606797749979
+>>> abs(b)
+5.0
+>>> info abs
+  File "<stdin>", line 1
+    info abs
+         ^^^
+SyntaxError: invalid syntax
+>>> help(abs)
+
+>>> c = 2.34567
+>>> round(c, 3)
+2.346
+>>> round(c, 2)
+2.35
+>>> help(round)
+
+>>> _
+2.35
+>>> a
+(2+1j)
+>>> _
+(2+1j)
+>>> name = "my name is Anirudha.\n\"
+  File "<stdin>", line 1
+    name = "my name is Anirudha.\n\"
+           ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> name
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'name' is not defined
+>>>
+>>> x = "My name is Anirudha. I am working in a \
+... software company."
+>>> x
+'My name is Anirudha. I am working in a software company.'
+>>> print(x)
+My name is Anirudha. I am working in a software company.
+>>> hello = '''
+... I want to say hello.
+... Nice to meet you all.
+... '''
+>>> hello
+'\nI want to say hello.\nNice to meet you all.\n'
+>>> print(hello)
+
+I want to say hello.
+Nice to meet you all.
+
+>>> ys = "hello"
+>>> ys
+'hello'
+>>> ys * 5
+'hellohellohellohellohello'
+>>> ys = ys + 'Hi'
+>>> ys
+'helloHi'
+>>> ys * 3
+'helloHihelloHihelloHi'
+>>> 'anirudha' 'pratap' 'singh'
+'anirudhapratapsingh'
+>>> help(string)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'string' is not defined. Did you forget to import 'string'?
+>>>
+>>>
+>>>
+>>> import string
+>>> ^[[A
+  File "<stdin>", line 1
+    ^
+SyntaxError: invalid non-printable character U+001B
+>>> help(string)
+
+>>>
+>>> dir(string)
+['Formatter', 'Template', '_ChainMap', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_re', '_sentinel_dict', '_string', 'ascii_letters', 'ascii_lowercase', 'ascii_uppercase', 'capwords', 'digits', 'hexdigits', 'octdigits', 'printable', 'punctuation', 'whitespace']
+>>> string.digits
+'0123456789'
+>>> string.printable
+'0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\r\x0b\x0c'
+>>> A in string.printable
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'A' is not defined. Did you mean: 'a'?
+>>> 'A' in string.printable
+True
+>>>
+>>> help(string.printable)
+No Python documentation found for '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'.
+Use help() to get the interactive help utility.
+Use help(str) for help on the str class.
+
+>>> dir(string.printable)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> help(string)
+
+>>> string.printable.strip
+<built-in method strip of str object at 0x71e93c3be9d0>
+>>> help(string.printable.strip)
+
+>>> print(None)
+None
+>>> help(None)
+
+>>> dir(None)
+['__bool__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']

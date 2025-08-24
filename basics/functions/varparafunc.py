@@ -1,11 +1,11 @@
 #handling variable number of paramaters to a function
 
-def visited(name,*places):
-    print name + ' has visited the following places:'
-    print places  #here places is a tuple containing multiple item
-    print 'same places:'
+def visited(name, *places):
+    print(name + ' has visited the following places:')
+    print(places)  # here places is a tuple containing multiple items
+    print('same places:')
     for p in places:
-        print p
+        print(p)
 
 
 visited('Anirudha','Ahmedabad','Etawa','Delhi','Hyderabad','Jodhpur')

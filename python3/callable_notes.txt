@@ -1,0 +1,14 @@
+Python 3.12.4 (main, Jun 15 2024, 12:30:05) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import math
+>>> callable(math.sqrt)
+True
+>>> y = math.sqrt
+>>> x = 5
+>>> callable(y)
+True
+>>> callable(x)
+False
+>>> y(36)
+6.0
+>>>

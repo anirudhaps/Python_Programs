@@ -1,12 +1,11 @@
 def divide():
     try:
-        x = input('Enter num1: ')
-        y = input('Enter num2: ')
+        x = int(input('Enter num1: '))
+        y = int(input('Enter num2: '))
         div = x / y
-        print 'x / y = %d' % div
-    except ZeroDivisionError:
-        print 'x, y = %d, %d' % (x, y)
-        print 'Divide by zero error'
+        print(f'x / y = {div}')
+    except ZeroDivisionError as e:
+        print(e)
 
 
 if __name__ == '__main__':

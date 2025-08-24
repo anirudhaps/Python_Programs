@@ -1,8 +1,8 @@
 
 import sys
 
-print sys.argv
-print len(sys.argv)
+print (sys.argv)
+print (len(sys.argv))
 
 # execution: python commandArg2.py apsingh amit sweta
 # output: sys.argv: ['commandArg2.py', 'apsingh', 'amit', 'sweta']

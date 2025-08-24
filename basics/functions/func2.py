@@ -3,10 +3,10 @@
 def mulhund(x):
     return x*100
 
-num = input('Enter any number: ')
+num = int(input('Enter any number: '))
 hn = mulhund(num)
 ##print 'Hundred times it is ' + `hn`
-k = (num,hn)
-print 'Hundred times %d is %d' % k
+k = (num, hn)
+print('Hundred times %d is %d' % k)
 
 

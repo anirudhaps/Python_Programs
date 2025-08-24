@@ -1,13 +1,13 @@
 #passing predefined tuple or dictionary as parameter to a function
 
 def prtuple(a,b,c):
-    print a*b+c
+    print(a*b+c)
 
 #def prtuple(*k):    
-    #print k
+    #print(k)
 
 def prdict(**dic):
-    print dic
+    print(dic)
 
 t = (2,5,7)
 prtuple(*t)   # when a tuple is passed to a function as parameter, use * before

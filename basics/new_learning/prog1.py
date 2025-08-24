@@ -5,20 +5,20 @@ def read_input():
 
 def check_even():
     num = read_input()
-    if num % 2 == 0:
-        print 'Even number'
+    if int(num) % 2 == 0:
+        print('Even number')
     else:
-        print 'Odd number'
+        print('Odd number')
 
 
 def check_dig_type():
     num = read_input()
-    if num >= 0 and num <= 9:
-        print 'Single digit number'
-    elif num >= 10 and num <= 99:
-        print 'Two digit number'
+    if int(num) >= 0 and int(num) <= 9:
+        print('Single digit number')
+    elif int(num) >= 10 and int(num) <= 99:
+        print('Two digit number')
     else:
-        print '3 or more number digits in the number'
+        print('3 or more number digits in the number')
 
 
 if __name__ == '__main__':

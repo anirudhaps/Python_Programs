@@ -1,13 +1,13 @@
 # passing a number by value to a function
 
 def inc(x):
-    x = x+1
+    x = x + 1
     return x
 
 n = 10
-print 'Before calling inc(x), n = ' + `n`
+print('Before calling inc(x), n = ' + str(n))
 n = inc(n)
-print 'After calling inc(x), n = ' + `n`
+print('After calling inc(x), n = ' + str(n))
 
 
 # passing a number by reference
@@ -18,6 +18,6 @@ def incre(x):
 
 
 n = [20]
-print 'Before calling incre(x), n = ' + `n`
+print('Before calling incre(x), n = ' + str(n))
 incre(n)
-print 'After calling incre(x), n = ' + `n`
+print('After calling incre(x), n = ' + str(n))
