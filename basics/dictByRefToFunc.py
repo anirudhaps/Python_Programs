@@ -7,13 +7,12 @@ def init(d):
 
 
 storage = {}
-print 'Storage before calling init on it: ', storage
+print('Storage before calling init on it: ', storage)
 init(storage)
-print 'Storage after calling init on it: ', storage
+print('Storage after calling init on it: ', storage)
 
 # after calling init, the storage and d both refer to same dictionary
 
-
-# Note: The keys of a dictionary don’t have a specific order, so when a
+# Note: The keys of a dictionary dont have a specific order, so when a
 # dictionary is printed out, the order may vary. If the order is different in
-# your interpreter, don’t worry about it.
+# your interpreter, dont worry about it.
